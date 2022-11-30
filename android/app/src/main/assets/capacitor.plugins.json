@@ -1,1 +1,6 @@
-[]
+[
+	{
+		"pkg": "@jofr/capacitor-media-session",
+		"classpath": "io.github.jofr.capacitor.mediasessionplugin.MediaSessionPlugin"
+	}
+]
