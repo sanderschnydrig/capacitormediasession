@@ -18,16 +18,19 @@
     "@angular/platform-browser": "~13.3.0",
     "@angular/platform-browser-dynamic": "~13.3.0",
     "@angular/router": "~13.3.0",
+    "@capacitor/android": "^3.9.0",
     "@capacitor/angular": "^2.0.3",
+    "@capacitor/core": "^3.9.0",
+    "@capacitor/ios": "^3.9.0",
     "rxjs": "~7.5.0",
     "tslib": "^2.3.0",
-    "zone.js": "~0.11.4",
-    "@capacitor/core": "latest"
+    "zone.js": "~0.11.4"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~13.3.8",
     "@angular/cli": "~13.3.8",
     "@angular/compiler-cli": "~13.3.0",
+    "@capacitor/cli": "~3.2.5",
     "@types/jasmine": "~3.10.0",
     "@types/node": "^12.11.1",
     "jasmine-core": "~4.0.0",
@@ -36,7 +39,6 @@
     "karma-coverage": "~2.1.0",
     "karma-jasmine": "~4.0.0",
     "karma-jasmine-html-reporter": "~1.7.0",
-    "typescript": "~4.6.2",
-    "@capacitor/cli": "latest"
+    "typescript": "~4.6.2"
   }
 }
