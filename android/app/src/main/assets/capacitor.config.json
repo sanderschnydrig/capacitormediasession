@@ -1,6 +1,0 @@
-{
-	"appId": "com.example.app",
-	"appName": "mediasession",
-	"webDir": "dist/mediasession",
-	"bundledWebRuntime": false
-}

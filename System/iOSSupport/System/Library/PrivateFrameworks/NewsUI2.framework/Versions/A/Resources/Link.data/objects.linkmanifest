@@ -1,0 +1,161 @@
+{
+  "actions" : [
+    {
+      "absoluteName" : "action\/FollowingOpenEntityAction",
+      "description" : "",
+      "fullyQualifiedName" : "FollowingOpenEntityAction",
+      "name" : "FollowingOpenEntityAction",
+      "parameters" : [
+        {
+          "absoluteName" : "action\/FollowingOpenEntityAction.parameter\/entity",
+          "label" : "entity",
+          "supportedInputTypes" : [
+
+          ],
+          "typeInfo" : {
+            "collectionType" : "scalar",
+            "isOptional" : false,
+            "type" : {
+              "linkEntity" : "entity\/FollowingEntity"
+            }
+          }
+        }
+      ],
+      "relatedPrebuiltActionName" : "OpenEntityAction",
+      "swiftMangledName" : "",
+      "title" : ""
+    },
+    {
+      "absoluteName" : "action\/OpenTabBarItemSiriLinkAction",
+      "description" : "Opens a tab bar or sidebar item.",
+      "fullyQualifiedName" : "OpenTabBarItemSiriLinkAction",
+      "name" : "OpenTabBarItemSiriLinkAction",
+      "parameters" : [
+        {
+          "absoluteName" : "action\/OpenTabBarItemSiriLinkAction.parameter\/entity",
+          "label" : "entity",
+          "supportedInputTypes" : [
+
+          ],
+          "typeInfo" : {
+            "collectionType" : "scalar",
+            "isOptional" : false,
+            "type" : {
+              "linkEntity" : "entity\/TabBarItemSiriLinkEntity"
+            }
+          }
+        }
+      ],
+      "relatedPrebuiltActionName" : "OpenEntityAction",
+      "swiftMangledName" : "",
+      "title" : "Open tab bar item"
+    },
+    {
+      "absoluteName" : "action\/SearchSiriLinkAction",
+      "description" : "",
+      "fullyQualifiedName" : "SearchSiriLinkAction",
+      "name" : "SearchSiriLinkAction",
+      "parameters" : [
+        {
+          "absoluteName" : "action\/SearchSiriLinkAction.parameter\/searchPhrase",
+          "label" : "searchPhrase",
+          "supportedInputTypes" : [
+
+          ],
+          "typeInfo" : {
+            "collectionType" : "scalar",
+            "isOptional" : false,
+            "type" : {
+              "prebuilt" : {
+                "string" : true
+              }
+            }
+          }
+        }
+      ],
+      "relatedPrebuiltActionName" : "SearchAction",
+      "swiftMangledName" : "",
+      "title" : ""
+    }
+  ],
+  "entities" : [
+    {
+      "absoluteName" : "entity\/FollowingEntity",
+      "actions" : [
+
+      ],
+      "fullyQualifiedName" : "FollowingEntity",
+      "inheritsFrom" : null,
+      "localeDataKey" : "entity\/FollowingEntity",
+      "name" : "FollowingEntity",
+      "swiftMangledName" : ""
+    },
+    {
+      "absoluteName" : "entity\/TabBarItemSiriLinkEntity",
+      "actions" : [
+
+      ],
+      "fullyQualifiedName" : "TabBarItemSiriLinkEntity",
+      "inheritsFrom" : null,
+      "localeDataKey" : "entity\/TabBarItemSiriLinkEntity",
+      "name" : "TabBarItemSiriLinkEntity",
+      "swiftMangledName" : ""
+    },
+    {
+      "absoluteName" : "entity\/TagFeedSiriLinkEntity",
+      "actions" : [
+
+      ],
+      "fullyQualifiedName" : "TagFeedSiriLinkEntity",
+      "inheritsFrom" : null,
+      "localeDataKey" : "entity\/TagFeedSiriLinkEntity",
+      "name" : "TagFeedSiriLinkEntity",
+      "swiftMangledName" : ""
+    }
+  ],
+  "enums" : [
+    {
+      "absoluteName" : "enum\/TabBarItemSiriLinkEntity",
+      "cases" : [
+        {
+          "absoluteName" : "enum\/TabBarItemSiriLinkEntity.enumCase\/today",
+          "keyPath" : "",
+          "name" : "today",
+          "rawValue" : "today"
+        },
+        {
+          "absoluteName" : "enum\/TabBarItemSiriLinkEntity.enumCase\/newsPlus",
+          "keyPath" : "",
+          "name" : "newsPlus",
+          "rawValue" : "newsPlus"
+        },
+        {
+          "absoluteName" : "enum\/TabBarItemSiriLinkEntity.enumCase\/audio",
+          "keyPath" : "",
+          "name" : "audio",
+          "rawValue" : "audio"
+        },
+        {
+          "absoluteName" : "enum\/TabBarItemSiriLinkEntity.enumCase\/following",
+          "keyPath" : "",
+          "name" : "following",
+          "rawValue" : "following"
+        },
+        {
+          "absoluteName" : "enum\/TabBarItemSiriLinkEntity.enumCase\/search",
+          "keyPath" : "",
+          "name" : "search",
+          "rawValue" : "search"
+        }
+      ],
+      "fullyQualifiedName" : "TabBarItemSiriLinkEntity",
+      "keyPath" : "",
+      "localeDataKey" : "enum\/TabBarItemSiriLinkEntity",
+      "name" : "TabBarItemSiriLinkEntity",
+      "swiftMangledName" : ""
+    }
+  ],
+  "queries" : [
+
+  ]
+}

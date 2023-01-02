@@ -1,0 +1,58 @@
+{
+  "synonyms" : {
+    "entities" : {
+
+    },
+    "enums" : {
+      "enum\/TabBarItemSiriLinkEntity" : {
+        "cases" : {
+          "audio" : {
+            "canonical" : "audio",
+            "customTerms" : [
+
+            ],
+            "terms" : [
+              "audio"
+            ]
+          },
+          "following" : {
+            "canonical" : "following",
+            "customTerms" : [
+
+            ],
+            "terms" : [
+              "following"
+            ]
+          },
+          "newsPlus" : {
+            "canonical" : "newsPlus",
+            "customTerms" : [
+
+            ],
+            "terms" : [
+              "newsPlus"
+            ]
+          },
+          "search" : {
+            "canonical" : "search",
+            "customTerms" : [
+
+            ],
+            "terms" : [
+              "search"
+            ]
+          },
+          "today" : {
+            "canonical" : "today",
+            "customTerms" : [
+
+            ],
+            "terms" : [
+              "today"
+            ]
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "actions" : [
+    {
+      "absoluteName" : "action\/ArticleNavigateSiriLinkAction",
+      "description" : "",
+      "fullyQualifiedName" : "ArticleNavigateSiriLinkAction",
+      "name" : "ArticleNavigateSiriLinkAction",
+      "parameters" : [
+
+      ],
+      "relatedPrebuiltActionName" : "NavigateSequentiallyAction",
+      "swiftMangledName" : "ArticleNavigateSiriLinkAction",
+      "title" : ""
+    }
+  ],
+  "entities" : [
+    {
+      "absoluteName" : "entity\/ArticleSiriLinkEntity",
+      "actions" : [
+
+      ],
+      "fullyQualifiedName" : "ArticleSiriLinkEntity",
+      "inheritsFrom" : null,
+      "localeDataKey" : "entity\/ArticleSiriLinkEntity",
+      "name" : "ArticleSiriLinkEntity",
+      "swiftMangledName" : "ArticleSiriLinkEntity"
+    }
+  ],
+  "enums" : [
+
+  ],
+  "queries" : [
+
+  ]
+}

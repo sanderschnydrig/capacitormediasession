@@ -1,0 +1,10 @@
+{
+  "mappedActions" : {
+    "NavigateSequentiallyAction" : {
+      "allDefinedActions" : [
+        "action\/ArticleNavigateSiriLinkAction"
+      ],
+      "defaultAction" : ""
+    }
+  }
+}
