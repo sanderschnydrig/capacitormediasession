@@ -9,32 +9,22 @@ import { MediaSession } from '@jofr/capacitor-media-session';
 export class AppComponent implements AfterViewInit {
   title = 'capacitormediasession';
   playbackStopped: boolean = true;
-
-  @ViewChild('player') playerRef!: ElementRef<HTMLAudioElement>;
-
-  get audioElement(): HTMLAudioElement {
-    return this.playerRef.nativeElement;
-  } 
+  audioElement!: HTMLAudioElement
 
   constructor () {}
 
   ngAfterViewInit(): void {
-    // this.audioElement = new Audio()
-    // this.audioElement = document.querySelector('audio')!;
-    setTimeout(() => {
-      
-      console.log('this.audioElement: ', this.audioElement)
-      this.actionHandlers()
-      
-      this.init()
-      
-      this.eventListeners()
-      
-      setTimeout(() => {
-        this.audioElement.src = './assets/audio/song.mp3'
-        this.audioElement.play()
-      }, 2000);
-    }, 3000);
+    this.audioElement = new Audio()
+  
+    console.log('this.audioElement: ', this.audioElement)
+    this.actionHandlers()
+    
+    this.init()
+    
+    this.eventListeners()
+    
+    this.audioElement.src = './assets/audio/song.mp3'
+    this.audioElement.play()
   }
 
   actionHandlers() {
