@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { MediaSession } from '@jofr/capacitor-media-session';
 
 @Component({
@@ -6,32 +6,35 @@ import { MediaSession } from '@jofr/capacitor-media-session';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.sass']
 })
-export class AppComponent implements OnInit {
+export class AppComponent implements AfterViewInit {
   title = 'capacitormediasession';
   playbackStopped: boolean = true;
-  audioElement: HTMLAudioElement;
 
-  constructor () {
+  @ViewChild('player') playerRef!: ElementRef<HTMLAudioElement>;
+
+  get audioElement(): HTMLAudioElement {
+    return this.playerRef.nativeElement;
+  } 
+
+  constructor () {}
+
+  ngAfterViewInit(): void {
     // this.audioElement = new Audio()
-    this.audioElement = document.querySelector('audio')!;
-  }
-    
-  ngOnInit(): void {
-    alert(1)
-    this.actionHandlers()
-    
-    alert(2)
-    this.init()
-    
-    alert(3)
-    this.eventListeners()
-    
-    alert(4)
+    // this.audioElement = document.querySelector('audio')!;
     setTimeout(() => {
-      alert()
-      this.audioElement.src = './assets/audio/song.mp3'
-      this.audioElement.play()
-    }, 2000);
+      
+      console.log('this.audioElement: ', this.audioElement)
+      this.actionHandlers()
+      
+      this.init()
+      
+      this.eventListeners()
+      
+      setTimeout(() => {
+        this.audioElement.src = './assets/audio/song.mp3'
+        this.audioElement.play()
+      }, 2000);
+    }, 3000);
   }
 
   actionHandlers() {
@@ -81,17 +84,11 @@ export class AppComponent implements OnInit {
   }
 
   eventListeners() {
-    alert(22)
     this.audioElement.addEventListener('durationchange', () => this.updatePositionState())
-    alert(23)
     this.audioElement.addEventListener('seeked', this.updatePositionState);
-    alert(24)
     this.audioElement.addEventListener('ratechange', this.updatePositionState);
-    alert(25)
     this.audioElement.addEventListener('play', this.updatePositionState);
-    alert(26)
     this.audioElement.addEventListener('pause', this.updatePositionState);
-    alert(27)
   }
 
   updatePositionState() {
